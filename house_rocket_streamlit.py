@@ -6,7 +6,6 @@ import geopandas
 import folium
 from streamlit_folium import folium_static
 from folium.plugins import MarkerCluster
-import plotly.express as px 
 
 
 st.set_page_config(layout='wide')
