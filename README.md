@@ -55,8 +55,10 @@ These are the variables in dataset, including some created by feature engineerin
 * Minimum_selling_price - Minimium selling price for that property
 * Suggested_selling_price - Suggested_selling_price for that property
 * Minimum_profit - Minimium profit company would make selling that house
-* Expected_profit - Profit company expect to make selling house
+* Expected_profit - Expected Profit company would make selling house
 * Max_improvement_cost - The maximum cost company should spent in renovating a house
+* Min_profit_margin - Minimium profit margin company would make selling that house
+* Expected_profit_margin - Expected Profit margin company would make selling house
 
 ## Planning Soluction
 
@@ -133,7 +135,7 @@ To check how much profit company would make, it was considered two scenarios as 
 
 ## Business results
 
-It was found ... were suggested for buying them. The dataframe was sorted in descending order of expected profit margin. Considering the 100 greatest expected profits, for instance, company would expect to make around $ X and a minimum profit of $ selling these houses.
+It was found approximately 9000 out of nearly 22000 properties on sold that were suggested for buying them. The dataframe was sorted in descending order of expected profit margin. Considering selling houses on summer, if company get the 15 properties with the greatest expected profits margins, for instance, company would expect to make around $ 6,174,935 and a minimum profit of $ 5,241,350 selling these houses.
 
 ## Next steps
 
