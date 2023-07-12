@@ -19,9 +19,9 @@ def data_collect(path):
     return df
 
 @st.cache( allow_output_mutation=True )
-def get_geofile( url ):
- geofile = geopandas.read_file( url )
- return geofile
+def get_geofile(url):
+    geofile = geopandas.read_file(filename=url)
+    return geofile
 
 def quantile_30(x):
     return x.quantile(0.3)
@@ -343,7 +343,7 @@ def map_overview(df,geofile):
     
 if __name__ == '__main__':
     data_raw = data_collect('kc_house_data.csv')
-    geofile = get_geofile(url='https://opendata.arcgis.com/datasets/83fc2e72903343aabff6de8cb445b81c_2.geojson')
+    geofile = get_geofile('Zip_Codes.geojson')
     data_processing = data_transform(data_raw)
     df = data_load(data_processing)
     st.dataframe(df.style.format(precision=2,thousands=','))
